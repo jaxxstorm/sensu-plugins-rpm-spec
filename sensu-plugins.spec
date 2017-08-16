@@ -42,8 +42,8 @@ mv %{_builddir}/ruby/2.4.0 %{buildroot}/opt/sensu/embedded/lib/ruby/gems
 
 mkdir -p %{buildroot}/etc/sensu/plugins
 mkdir -p %{buildroot}/etc/sensu/handlers
-cp -a sensu-plugins/* %{buildroot}/etc/sensu/plugins
-cp -a sensu-handlers/* %{buildroot}/etc/sensu/plugins
+cp -a plugins/* %{buildroot}/etc/sensu/plugins
+cp -a handlers/* %{buildroot}/etc/sensu/handlers
 chmod -R 0755 %{buildroot}/etc/sensu/plugins
 chmod -R 0755 %{buildroot}/etc/sensu/handlers
 
